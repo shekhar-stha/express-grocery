@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CallNow from "../buttons/callNow";
 
 export default function Navbar() {
   return (
@@ -50,7 +51,7 @@ export default function Navbar() {
                 <a className="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
-            <a className="btn btn-primary col-lg-2 col-12" href="#">Call Now</a>
+            <CallNow className="btn-primary col-lg-2 col-12 " />
           </div>
         </div>
       </nav>

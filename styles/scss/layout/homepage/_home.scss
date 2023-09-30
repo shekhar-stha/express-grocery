@@ -179,3 +179,142 @@
         }
     }
 }
+
+// Testimonials
+
+// Testimonials Section
+.testimonials {
+    padding: 3rem 0;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: rgb(50, 103, 73, 1);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    // Backround Image
+    .bg-img {
+        position: absolute;
+        filter: brightness(100%);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    // Testimonials Slider
+    .testimonial-slider {
+
+        // Each Testimonial Column of Slider
+        .column {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem 1.6rem;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 12px;
+            background-color: $white;
+            min-height: 320px;
+
+            .quote {
+                width: 4rem;
+                filter: grayscale(100%);
+            }
+
+            .data {
+                margin: 1.5rem 0;
+                color: #1b1b1b;
+            }
+
+            .user-info {
+                display: flex;
+                align-items: center;
+
+                .user-details {
+                    padding-left: 1rem;
+
+                    .name {
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: $primary;
+                    }
+
+                    .address {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Faq
+.faq {
+    .accordion {
+        --bs-accordion-border-width: 0px;
+        --bs-accordion-btn-focus-border-color: #ffffff;
+        --bs-accordion-active-color: #ffffff;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem;
+    }
+
+    .accordion-item {
+        margin-bottom: 1rem;
+        border: 1px solid #e4e4e4;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml,...");
+    }
+
+    .accordion-button::after {
+        background-image: url("data:image/svg+xml,...");
+    }
+
+    .accordion-button:not(.collapsed):after {
+        transform: none !important;
+        transform: all 0.3s;
+    }
+
+    .accordion-topic button {
+        padding: 10px 30px;
+    }
+
+    .accordion-topic button:after {
+        font-family: "FontAwesome";
+        content: "\f068";
+        float: right;
+        color: $success;
+        font-size: 1rem;
+        height: inherit;
+    }
+
+    .accordion-topic button.collapsed:after {
+        content: "\f068";
+        content: "\2b";
+    }
+
+    .accordion-topic span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #293241;
+    }
+
+    .accordion-body {
+        padding-left: 2rem;
+    }
+
+    .accordion-button {
+        background-color: #ffffff !important;
+    }
+}

@@ -158,6 +158,48 @@ p {
         margin-right: 1rem;
     }
   }
+
+  .slick-list {
+    margin: 0 -10px;
+    @media (max-width: 576px) {
+      margin: 0 -5px;
+    }
+  }
+
+  .slick-slide>div {
+    padding: 15px 10px;
+    @media (max-width: 576px) {
+      padding: 15px 5px;
+    }
+  }
+
+  .slick-custom{
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 4;
+    width: 55px;
+    height: 55px;
+  }
+
+  .slick-custom:active{
+    color: #fff;
+  }
+
+  .slick-custom-prev{
+    position: absolute;
+    left: -4rem;
+    @media (max-width: 576px) {
+      left: -0.5rem;
+    }
+  }
+
+  .slick-custom-next{
+    position: absolute;
+    right: -4rem;
+    @media (max-width: 576px) {
+      right: -0.5rem;
+    }
+  }
 // 
 
 // 
@@ -198,7 +240,6 @@ body{
         color: $secondary;
         background-color: transparent;
         border: 2px solid $secondary;
-        transform: scale(1.1);
     }
 }
 
