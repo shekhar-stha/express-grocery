@@ -8,17 +8,21 @@ import { useEffect, useState } from 'react';
 import useSWR from 'swr';
 import Faq from '../components/info/faq';
 import Testimonials from '../components/info/testimonials';
+import Footer from '../components/info/footer';
+import products from '../json/products';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home() {
-  const { data, error } = useSWR('/api/staticdata', fetcher);
+  // const { data, error } = useSWR('/api/staticdata', fetcher);
 
-  if (error) return <div>Error loading data</div>;
-  if (!data) return <div>Loading...</div>;
+  // if (error) return <div>Error loading data</div>;
+  // if (!data) return <div>Loading...</div>;
 
-  const products = data;
-  console.log("Products" + products)
+  // const products = data;
+  // console.log("Products" + products)
+
+  console.log(products[0], "jj")
   return (
     <div>
       <Head>
@@ -82,9 +86,10 @@ export default function Home() {
         </section>
         <ProductCategories />
         <WhyUs />
-        {/* <ProductSlider containerName="All Products" products={products} /> */}
+        <ProductSlider containerName="All Products" products={products[0]} />
         <Testimonials />
         <Faq />
+        <Footer />
       </main>
     </div>
   );
