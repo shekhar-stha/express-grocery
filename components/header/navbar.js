@@ -8,16 +8,16 @@ export default function Navbar() {
         <div className="container">
           <div className="d-flex justify-content-between">
             <div>
-              <a title="Location" href="https://www.google.com/maps/dir/26.6518471,87.2980115/38.06326,-78.48848/@2.315488,-81.9361986,3z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" className="fs-19 text-white">
-                <i className="fa-solid fa-location-dot text-secondary fs-24 me-3"></i>
-                Charlottesville, VA
+              <a className="fs-19 text-white" title="Location" href="https://www.google.com/maps/dir/26.6518471,87.2980115/38.06326,-78.48848/@2.315488,-81.9361986,3z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu">
+                <i className="fa-solid fa-location-dot text-secondary fs-24 me-3" />
+                <span>Charlottesville, VA</span>
               </a>
             </div>
 
             <div>
               <a title="Phone Number" className="fs-19 text-white" href="tel:+14342847549">
                 <i className="fa-solid fa-phone text-secondary fs-24 me-3"></i>
-                +1 434-284-7549
+                <span>+1 434-284-7549</span>
               </a>
             </div>
           </div>

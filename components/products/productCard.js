@@ -9,7 +9,7 @@ export default function ProductCard(props) {
                 <span className="store fs-14">{props?.category}</span>
                 <h5 className="product-name fw-500">{props?.name}</h5>
                 <h6 className="price text-secondary fw-semibold">
-                    Rs. {props?.price} <span className="fw-normal crossed-price">{props?.crossedPrice}</span>
+                    $ {props?.price} <span className="fw-normal crossed-price">$ {props?.crossedPrice}</span>
                 </h6>
             </div>
             <span className="discount-percent position-absolute fw-500">
