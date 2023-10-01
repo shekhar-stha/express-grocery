@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav className="navbar navbar-expand-lg bg-white">
+      <nav className="navbar navbar-expand-xl bg-white">
         <div className="container">
           <a className="navbar-brand" href="/">
             <img src="/img/logo.png" alt="logo" className="logo" />

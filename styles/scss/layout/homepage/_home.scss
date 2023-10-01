@@ -17,8 +17,8 @@
             transform: none;
             top: 0;
             left: 0;
-            background: rgb(16, 91, 167);
-            background: linear-gradient(90deg, rgb(16, 90, 163) 0%, rgb(14, 88, 161) 32%, rgba(16, 88, 160, 0.936) 61%, rgba(16, 96, 177, 0.768) 94%);
+            z-index: -1;
+            background: linear-gradient(90deg, rgb(50, 103, 73) 0%, rgb(50, 103, 73) 32%, rgba(50, 103, 73, 0.936) 61%, rgba(50, 103, 73, 0.768) 94%);
         }
     }
 }
@@ -26,6 +26,23 @@
 .nav-hero {
     background-color: $primary;
     position: relative;
+
+    @media (max-width: 1200px) {
+        background-color: transparent !important;
+    }
+
+    .bg-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        object-fit: cover;
+        z-index: -1;
+
+        @media (min-width: 1200px) {
+            display: none;
+        }
+    }
     .hero {
 
         @media (max-width: 1200px) {
@@ -186,6 +203,7 @@
 .testimonials {
     padding: 3rem 0;
     position: relative;
+    padding-bottom: 6rem;
 
     &::after {
         position: absolute;
@@ -208,6 +226,53 @@
         left: 0;
         object-fit: cover;
         z-index: -1;
+    }
+
+    .slick-custom {
+        top: inherit;
+        bottom: -10%;
+        // transform: translate(0%, -50%);
+        z-index: 4;
+    }
+
+    .slick-custom:active {
+        color: #fff;
+    }
+
+    .slick-custom-prev {
+        position: absolute;
+        left: 47%;
+        transform: translateX(-50%);
+
+        @media (max-width: 1200px) {
+            left: 45%;
+        }
+
+        @media (max-width: 768px) {
+            left: 42%;
+        }
+
+        @media (max-width: 380px) {
+            left: 39%;
+        }
+    }
+
+    .slick-custom-next {
+        position: absolute;
+        right: 47%;
+        transform: translateX(50%);
+
+        @media (max-width: 1200px) {
+            right: 45%;
+        }
+        
+        @media (max-width: 768px) {
+            right: 42%;
+        }
+
+        @media (max-width: 380px) {
+            right: 39%;
+        }
     }
 
     // Testimonials Slider

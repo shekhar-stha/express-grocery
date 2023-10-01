@@ -35,14 +35,35 @@
         position: absolute;
         left: 47%;
         transform: translateX(-50%);
+
+        @media (max-width: 1200px) {
+            left: 45%;
+        }
+
+        @media (max-width: 768px) {
+            left: 42%;
+        }
+
+        @media (max-width: 380px) {
+            left: 39%;
+        }
     }
 
     .slick-custom-next {
         position: absolute;
         right: 47%;
         transform: translateX(50%);
-        @media (max-width: 576px) {
-            right: -0.5rem;
+
+        @media (max-width: 1200px) {
+            right: 45%;
+        }
+        
+        @media (max-width: 768px) {
+            right: 42%;
+        }
+
+        @media (max-width: 380px) {
+            right: 39%;
         }
     }
 

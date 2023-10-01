@@ -34,6 +34,7 @@ export default function Home() {
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
+          <img class="bg-img" src="/img/store-indoor.JPG" alt="Painter painting"/>
         </section>
         <ProductCategories />
         <WhyUs />
