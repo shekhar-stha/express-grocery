@@ -34,7 +34,7 @@ export default function WhyUs() {
                        <CallNow className="btn-primary px-5 mt-3" />
                     </div>
                     <div className='img-div'>
-                        <img src='/img/store-outdoor.jpg' alt='Store Outdoor' />
+                        <img src='/img/store-outdoor.JPG' alt='Store Outdoor' />
                     </div>
                 </div>
             </div>
