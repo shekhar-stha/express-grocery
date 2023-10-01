@@ -1,6 +1,6 @@
 import React from 'react'
 import CallNow from '../buttons/callNow'
-
+import { IconStarFilled } from '@tabler/icons-react';
 export default function Hero() {
     return (
         <div className='hero'>
@@ -24,11 +24,11 @@ export default function Hero() {
                                     <img src="/img/Yelp.png" alt="Yelp Logo" />
                                 </div>
                                 <div className="stars">
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
                                 </div>
                             </a>
 
@@ -37,11 +37,11 @@ export default function Hero() {
                                     <img src="/img/google.png" alt="Google Logo" />
                                 </div>
                                 <div className="stars">
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i>
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
+                                    <IconStarFilled size={19} className="text-secondary" />
                                 </div>
                             </a>
                         </div>
