@@ -12,7 +12,7 @@
 // $white: #fff;
 // $info: #808080;
 
-$primary: #326749;
+$primary: rgb(50, 103, 73);
 $secondary: #ea7627;
 $warning: #ff4d00;
 $success: #d3e0d9;
@@ -30,6 +30,7 @@ $container-max-widths: (
 );
 $grid-breakpoints: (
     xs: 0,
+    vsm: 400px,
     sm: 576px,
     md: 768px,
     lg: 992px,

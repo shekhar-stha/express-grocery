@@ -46,7 +46,7 @@
     .hero {
 
         @media (max-width: 1200px) {
-            padding: 2rem 0 3rem;
+            padding: 3rem 0 3rem;
         }
 
         .info-div {
@@ -153,11 +153,13 @@
 
             @media (max-width: 768px) {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
             }
 
-            @media (max-width: 450px) {
+            @media (max-width: 400px) {
                 grid-template-columns: repeat(1, 1fr);
                 margin-top: 1rem;
+                gap: 1rem;
             }
 
             .column {

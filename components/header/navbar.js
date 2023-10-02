@@ -8,8 +8,8 @@ export default function Navbar() {
     <>
       <div className="top-information py-3 bg-primary">
         <div className="container">
-          <div className="d-flex justify-content-between">
-            <div>
+          <div className="d-flex justify-content-sm-between flex-sm-row flex-column align-items-center">
+            <div className="d-sm-inline d-none">
               <a className="fs-19 text-white" title="Location" href="https://www.google.com/maps/dir/26.6518471,87.2980115/38.06326,-78.48848/@2.315488,-81.9361986,3z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu">
               <IconCurrentLocation  className="text-secondary me-3" />
                 <span>Charlottesville, VA</span>
@@ -31,7 +31,7 @@ export default function Navbar() {
             <img src="/img/logo.png" alt="logo" className="logo" />
           </a>
 
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 
