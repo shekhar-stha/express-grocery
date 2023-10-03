@@ -43,5 +43,14 @@
     "img": "https://t2.gstatic.com/images?q=tbn:ANd9GcRpPhav5EFLOBDP_PmlPtODxh4ESMtUHL9paqrIabyZswMsNfVa",
     "price": 2.49,
     "discount": 0.25
+},
+{
+    "id": 6,
+    "name": "Mangoes",
+    "genre": "Fresh Produce",
+    "description": "Fresh, juicy mangoes sourced directly from local farms.",
+    "img": "https://t0.gstatic.com/images?q=tbn:ANd9GcS-vgwd-tz37086GhlNUyoJTEknU3W2Hat9owZXOIEvGLbf6s9B",
+    "price": 3.49,
+    "discount": 0.50
 }
 ]

@@ -1,7 +1,9 @@
 import Image from "next/image";
 import CallNow from "../buttons/callNow";
-import { IconCurrentLocation  } from '@tabler/icons-react';
-import { IconPhoneCall  } from '@tabler/icons-react';
+import { IconCurrentLocation } from '@tabler/icons-react';
+import { IconPhoneCall } from '@tabler/icons-react';
+import Link from "next/link";
+import SearchComponent from "../ui-elements/searchButton";
 
 export default function Navbar() {
   return (
@@ -11,14 +13,14 @@ export default function Navbar() {
           <div className="d-flex justify-content-sm-between flex-sm-row flex-column align-items-center">
             <div className="d-sm-inline d-none">
               <a className="fs-19 text-white" title="Location" href="https://www.google.com/maps/dir/26.6518471,87.2980115/38.06326,-78.48848/@2.315488,-81.9361986,3z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu">
-              <IconCurrentLocation  className="text-secondary me-3" />
+                <IconCurrentLocation className="text-secondary me-3" />
                 <span>Charlottesville, VA</span>
               </a>
             </div>
 
             <div>
               <a title="Phone Number" className="fs-19 text-white" href="tel:+14342847549">
-              <IconPhoneCall className="text-secondary me-3" />
+                <IconPhoneCall className="text-secondary me-3" />
                 <span>+1 434-284-7549</span>
               </a>
             </div>
@@ -38,22 +40,25 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav text-center mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">Home</a>
+                <Link className="nav-link" aria-current="page" href="/">Home</Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Grocery</a>
+                <Link className="nav-link" href="/grocery">Grocery</Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">About Us</a>
+                <Link className="nav-link" href="/about">About Us</Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact Us</a>
+                <Link className="nav-link" href="/contact">Contact Us</Link>
               </li>
             </ul>
-            <CallNow className="btn-primary col-lg-2 col-12 " />
+            <CallNow className="btn-primary col-xl-2 d-xl-none col-12 mt-3" />
+            <div className="d-xl-block d-none">
+              <SearchComponent btnClass="btn-primary" inputClass="border-2 border-info" />
+            </div>
           </div>
         </div>
       </nav>

@@ -1,7 +1,9 @@
 import React from 'react'
 import CallNow from '../buttons/callNow'
 import { IconStarFilled } from '@tabler/icons-react';
+
 import SearchComponent from '../ui-elements/searchButton';
+import Link from 'next/link';
 export default function Hero() {
     return (
         <div className='hero'>
@@ -17,14 +19,14 @@ export default function Hero() {
                         <div className="d-flex flex-vsm-row 
                         flex-column mt-xl-4 mt-sm-5 mt-5 pb-4">
                             <CallNow className="btn-secondary px-5" />
-                            <a title="Services" href="/index.html#services" className="ms-vsm-4 mt-vsm-0 mt-3 btn btn-light border-2 fs-19 px-4 rounded-1">Our Services</a>
+                            <Link title="Services" href="/grocery" className="ms-vsm-4 mt-vsm-0 mt-3 btn btn-light border-2 fs-19 px-4 rounded-1">Shop Now</Link>
                         </div>
 
-                        <div className='col-xl-10 col-sm-9 mt-3'>
-                            <SearchComponent />
+                        <div className='col-xl-10 col-sm-9 mt-3 d-sm-none d-block' >
+                            <SearchComponent btnClass="btn-secondary" />
                         </div>
 
-                        {/* <div className="ratings">
+                        <div className="ratings d-sm-grid d-none">
                             <a title='Yelp Navigation' target='_blank' href='https://www.yelp.com/biz/express-grocery-store-charlottesville' className="column">
                                 <div className="img-section">
                                     <img src="/img/Yelp.png" alt="Yelp Logo" />
@@ -50,7 +52,7 @@ export default function Hero() {
                                     <IconStarFilled size={19} className="text-secondary" />
                                 </div>
                             </a>
-                        </div> */}
+                        </div>
                     </div>
                     <div className="img-div">
                         <img className="hero-img" src="/img/hero-lady.png" alt="Painter Painting" />

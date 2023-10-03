@@ -43,6 +43,7 @@
             display: none;
         }
     }
+
     .hero {
 
         @media (max-width: 1200px) {
@@ -77,6 +78,10 @@
 
                 @media (max-width: 1200px) {
                     color: $white;
+                }
+
+                @media (max-width: 992px) {
+                    font-size: 42px;
                 }
 
                 @media (max-width: 768px) {
@@ -207,7 +212,6 @@
 .testimonials {
     padding: 3rem 0;
     position: relative;
-    padding-bottom: 6rem;
 
     &::after {
         position: absolute;
@@ -233,10 +237,19 @@
     }
 
     .slick-custom {
-        top: inherit;
-        bottom: -10%;
-        // transform: translate(0%, -50%);
-        z-index: 4;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $secondary;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 1.1rem;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
     }
 
     .slick-custom:active {
@@ -244,38 +257,18 @@
     }
 
     .slick-custom-prev {
-        position: absolute;
-        left: 47%;
-        transform: translateX(-50%);
-
-        @media (max-width: 1200px) {
-            left: 45%;
-        }
+        left: -40px;
 
         @media (max-width: 768px) {
-            left: 42%;
-        }
-
-        @media (max-width: 380px) {
-            left: 39%;
+            left: -15px;
         }
     }
 
     .slick-custom-next {
-        position: absolute;
-        right: 47%;
-        transform: translateX(50%);
+        right: -40px;
 
-        @media (max-width: 1200px) {
-            right: 45%;
-        }
-        
         @media (max-width: 768px) {
-            right: 42%;
-        }
-
-        @media (max-width: 380px) {
-            right: 39%;
+            right: -15px;
         }
     }
 
@@ -323,6 +316,40 @@
         }
     }
 }
+
+
+// Gallery
+.gallery {
+    .gallery-photos {
+        column-count: 3;
+        --webkit-column-count: 3;
+        --moz-column-count: 3;
+        gap: 1rem;
+        padding: 2rem 0rem;
+
+        @media (max-width: 576px) {
+            column-count: 1;
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                height: auto;
+                max-height: 25rem;
+                object-fit: cover;
+                width: 100%;
+                margin-bottom: 1rem;
+
+                &:hover {
+                    transform: scale(0.97);
+                }
+            }
+        }
+    }
+}
+
 
 // Faq
 .faq {
@@ -391,10 +418,11 @@
 
 footer {
     .footer-col {
-        img{
+        img {
             max-width: 400px;
             width: 100%;
         }
+
         @media only screen and (max-width: 1000px) {
             text-align: left;
         }

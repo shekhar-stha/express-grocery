@@ -11,6 +11,7 @@ import Testimonials from '../components/info/testimonials';
 import Footer from '../components/info/footer';
 // import products from '../json/products';
 import Hero from '../components/info/hero';
+import Gallery from '../components/info/gallery';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -34,12 +35,15 @@ export default function Home() {
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
-          <img class="bg-img" src="/img/store-indoor.JPG" alt="Painter painting"/>
+          <img class="bg-img" src="/img/store-indoor.JPG" alt="Painter painting" />
         </section>
         <ProductCategories />
         <WhyUs />
-        <ProductSlider containerName="All Products" products={products} />
+        <ProductSlider headerClass="text-start" containerName="Top Selling Products" products={products} />
+        <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
+        <ProductSlider headerClass="text-start" containerName="Spices" products={products} />
         <Testimonials />
+        <Gallery />
         <Faq />
         <Footer />
       </main>
