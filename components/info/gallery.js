@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Lightbox from 'react-image-lightbox';
-import 'react-image-lightbox/style.css'; // Import the CSS
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css'; // Import the CSS
 
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
