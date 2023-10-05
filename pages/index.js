@@ -24,6 +24,9 @@ export default function Home() {
   const products = JSON.parse(data);
   console.log("Products" + products)
 
+
+  const spices = products.filter((product) => product.genre === 'Spices');
+
   return (
     <div>
       <Head>
@@ -41,7 +44,7 @@ export default function Home() {
         <WhyUs />
         <ProductSlider headerClass="text-start" containerName="Top Selling Products" products={products} />
         <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
-        <ProductSlider headerClass="text-start" containerName="Spices" products={products} />
+        <ProductSlider headerClass="text-start" containerName="Spices" products={spices} />
         <Testimonials />
         <Gallery />
         <Faq />

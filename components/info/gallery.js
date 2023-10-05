@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Lightbox from 'react-18-image-lightbox';
-import 'react-18-image-lightbox/style.css'; // Import the CSS
+import 'react-18-image-lightbox/style.css';
 
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
   const images = [
     '/img/gallery-1.JPG',
     '/img/gallery-2.JPG',
@@ -12,7 +13,6 @@ const Gallery = () => {
     '/img/gallery-5.JPG',
     '/img/couples-shopping.jpg',
   ];
-  const [photoIndex, setPhotoIndex] = useState(0);
 
   const handleImageClick = (index) => {
     setIsOpen(true);

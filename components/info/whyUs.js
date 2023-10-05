@@ -27,7 +27,7 @@ export default function WhyUs() {
                             <div className='feature'>
                                 <img src='/img/delivery-man.png' alt='Delivery Man' />
 
-                                <p>Fast and reliable ddivery</p>
+                                <p>Fast and reliable delivery</p>
                             </div>
                         </div>
 

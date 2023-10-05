@@ -27,9 +27,9 @@ export default function Hero() {
                         </div>
 
                         <div className="ratings d-sm-grid d-none">
-                            <a title='Yelp Navigation' target='_blank' href='https://www.yelp.com/biz/express-grocery-store-charlottesville' className="column">
+                            <a title='Facebook Navigation' target='_blank' href='https://www.facebook.com/welcomenamaste' className="column">
                                 <div className="img-section">
-                                    <img src="/img/Yelp.png" alt="Yelp Logo" />
+                                    <img src="/img/facebook.png" alt="Yelp Logo" />
                                 </div>
                                 <div className="stars">
                                     <IconStarFilled size={19} className="text-secondary" />

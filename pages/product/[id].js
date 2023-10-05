@@ -6,6 +6,7 @@ import Head from 'next/head';
 import CallNow from '../../components/buttons/callNow';
 import ProductSlider from '../../components/products/productSlider';
 import Gallery from '../../components/info/gallery';
+import Footer from '../../components/info/footer';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function ProductInfo() {
@@ -46,9 +47,7 @@ export default function ProductInfo() {
                             <div className="col-lg-6">
                                 <div className="product-detail-info">
                                     <h2 className="name">{product?.name}</h2>
-                                    <h4 className="price">$ {product?.price - product?.discount} <span className="crossed-price">$ {product?.price}</span></h4>
-                                    <p className="discount-percent">({((product?.discount / product?.price) * 100).toFixed(0)}% Off)</p>
-                                    <p className="discount-context">You saved <span>$ {product?.discount}</span> on this product </p>
+                                    <p className='fs-18 fw-500 pb-4'>Product ID: {product?.id}</p>
                                     <p className='pb-3'><span className='text-primary fw-600'>Genre:</span> {product?.genre}</p>
                                     <p className='text-primary mb-2 fw-600'>Product Description:</p>
                                     <p className="information">
@@ -64,12 +63,13 @@ export default function ProductInfo() {
                 </section>
 
                 {
-                    similarProducts.length > 0 && (<ProductSlider containerName="Similar Products" products={similarProducts} /> )
+                    similarProducts.length > 0 && (<ProductSlider containerName="Similar Products" products={similarProducts} />)
                 }
 
                 <ProductSlider headerClass="text-start" containerName="Other Products" products={products} />
                 <Gallery />
             </div>
+            <Footer />
         </>
     )
 }

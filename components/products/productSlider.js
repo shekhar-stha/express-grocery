@@ -52,20 +52,20 @@ export default function ProductSlider(props) {
     return (
         <>
             <div className="product-row container my-5 py-3" >
-                <h2 className={`header ${props.headerClass ? props.headerClass: " text-center"}`}>{props.containerName}</h2>
+                <h2 className={`header ${props.headerClass ? props.headerClass : " text-center"}`}>{props.containerName}</h2>
                 <div className="position-relative">
                     <button onClick={() => slider.current.slickPrev()} className="slick-custom slick-custom-prev btn btn-primary rounded-circle">
-                        <i className="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <button onClick={() => slider.current.slickNext()} className="slick-custom slick-custom-next btn btn-primary rounded-circle">
-                        <i className="fa-solid fa-chevron-right"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
                     </button>
                     <Slider ref={slider} {...settings}>
                         {
                             props?.products?.map((product) => {
                                 return (
                                     <Link href={`/product/${product?.id}`} key={product?.id} >
-                                        <Product name={product?.name} category={product?.genre} img={product?.img} price={product?.price - product?.discount} discountPercent={((product?.discount / product?.price) * 100)?.toFixed(0)} crossedPrice={((product?.price))?.toFixed(2)} />
+                                        <Product id={product?.id} name={product?.name} category={product?.genre} img={product?.img} />
                                     </Link>
                                 )
                             })
