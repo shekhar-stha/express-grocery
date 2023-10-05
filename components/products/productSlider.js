@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { IconChevronRight } from '@tabler/icons-react';
 import { IconChevronLeft } from '@tabler/icons-react';
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ProductSlider(props) {
     // React slick
     const slider = useRef(null);
@@ -55,10 +56,10 @@ export default function ProductSlider(props) {
                 <h2 className={`header ${props.headerClass ? props.headerClass : " text-center"}`}>{props.containerName}</h2>
                 <div className="position-relative">
                     <button onClick={() => slider.current.slickPrev()} className="slick-custom slick-custom-prev btn btn-primary rounded-circle">
-                    <i class="fa-solid fa-chevron-left"></i>
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-left" />
                     </button>
                     <button onClick={() => slider.current.slickNext()} className="slick-custom slick-custom-next btn btn-primary rounded-circle">
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-right" />
                     </button>
                     <Slider ref={slider} {...settings}>
                         {
