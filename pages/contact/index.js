@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Navbar from '../../components/header/navbar';
+import Footer from '../../components/info/footer';
 
 export default function Contact() {
   return (
@@ -9,13 +11,9 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1>
-          Contact
-        </h1>
+      <Navbar />
 
-        <Link href="/contact">Homepage!</Link>
-      </main>
+      <Footer />
     </div>
   );
 }

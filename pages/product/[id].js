@@ -7,6 +7,7 @@ import CallNow from '../../components/buttons/callNow';
 import ProductSlider from '../../components/products/productSlider';
 import Gallery from '../../components/info/gallery';
 import Footer from '../../components/info/footer';
+import Link from 'next/link';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function ProductInfo() {
@@ -55,7 +56,12 @@ export default function ProductInfo() {
 
                                     </p>
 
-                                    <CallNow className="btn btn-primary px-5 mt-4" />
+                                    <div className='mt-4'>
+                                        <CallNow className="btn btn-primary px-5 mt-2" />
+                                        <Link className='btn btn-outline-primary border-2 fw-500 ms-3 mt-2 px-5' href={`/contact`} key={product?.id} >
+                                            Contact Us
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
