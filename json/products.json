@@ -25,28 +25,28 @@
     "name": "Kinder Bueno Crispy Creamy Chocolate Bar 2 Ct",
     "genre": "Chocolate",
     "description": "Unique combination of creamy hazelnut filling, crispy wafer layers, and a smooth milk chocolate coating. A popular brand by Ferrero.",
-    "img": "/img/choclate.png"
+    "img": "/img/products/choclate.png"
   },
   {
     "id": 5,
     "name": "Payday small",
     "genre": "Snacks",
     "description": "Distinctive combination of caramel and peanuts in PayDay bars.",
-    "img": "/img/pay.jpg"
+    "img": "/img/products/pay.jpg"
   },
   {
     "id": 6,
     "name": "Dove White Beauty Bar 3.15 Oz",
     "genre": "Toiletries",
     "description": "Gentle and nourishing Dove White Beauty Bar for soft and clean skin.",
-    "img": "/img/dove.jpg"
+    "img": "/img/products/dove.jpg"
   },
   {
     "id": 7,
     "name": "Tetley Elaichi Tb 72Ct",
     "genre": "Tea",
     "description": "Tetley tea with the aromatic goodness of elaichi (cardamom) in convenient 72-count packs.",
-    "img": "/img/tea.jpg"
+    "img": "/img/products/tea.jpg"
   },
   {
     "id": 8,
@@ -81,154 +81,154 @@
     "name": "Natural Green Tea Bags",
     "genre": "Tea",
     "description": "Pure and natural green tea bags. Packed with antioxidants for a healthy lifestyle.",
-    "img": "/img/bag.png"
+    "img": "/img/products/bag.png"
   },
   {
     "id": 13,
     "name": "l Green Tea, Lemon, 144 g",
     "genre": "Tea",
     "description": "Green tea infused with the zesty goodness of lemon. A refreshing and healthy choice.",
-    "img": "/img/lemon.jpg"
+    "img": "/img/products/lemon.jpg"
   },
   {
     "id": 14,
     "name": "Deep Boondi",
     "genre": "Spices",
     "description": "Deep Boondi is a flavorful addition to your culinary adventures.",
-    "img": "/img/bondi.jpg"
+    "img": "/img/products/bondi.jpg"
   },
   {
     "id": 15,
     "name": "Deep Chhole 10oz",
     "genre": "Spices",
     "description": "Deep Chhole Masala adds a delicious and aromatic touch to your chickpea dishes.",
-    "img": "/img/chole.jpg"
+    "img": "/img/products/chole.jpg"
   },
   {
     "id": 16,
     "name": "Deep Matar Panner 10oz",
     "genre": "Spices",
     "description": "Deep Matar Paneer Masala is a flavorful blend for your delectable peas and cottage cheese curry.",
-    "img": "/img/paner.jpg"
+    "img": "/img/products/paner.jpg"
   },
   {
     "id": 17,
     "name": "Reenas Mango 1/2Gal",
     "genre": "Juices",
     "description": "Reena's Mango Juice is a refreshing and naturally sweet delight in a convenient 1/2-gallon size.",
-    "img": "/img/mango.jpg"
+    "img": "/img/products/mango.jpg"
   },
   {
     "id": 18,
     "name": "Reena mango",
     "genre": "Juices",
     "description": "Reena Mango Juice is a delicious and natural source of energy.",
-    "img": "/img/mag.jpg"
+    "img": "/img/products/mag.jpg"
   },
   {
     "id": 19,
     "name": "Reenas Kesar Pista 1Q",
     "genre": "Juices",
     "description": "Reena's Kesar Pista Juice offers a delightful blend of saffron and pistachio flavors.",
-    "img": "/img/pista.jpg"
+    "img": "/img/products/pista.jpg"
   },
   {
     "id": 20,
     "name": "Reenas Chokoo 1Quart",
     "genre": "Juices",
     "description": "Reena's Chokoo Juice is a rich and creamy delight in a convenient 1-quart size.",
-    "img": "/img/chiko.jpg"
+    "img": "/img/products/chiko.jpg"
   },
   {
     "id": 21,
     "name": "Deep Chicken Tikka  9 Oz",
     "genre": "Spices",
     "description": "Deep Chicken Tikka Masala adds a burst of flavor to your chicken dishes.",
-    "img": "/img/tikka.png"
+    "img": "/img/products/tikka.png"
   },
   {
     "id": 22,
     "name": "Mirch  green vatana 340g",
     "genre": "Spices",
     "description": "Green vatana with a spicy kick. A versatile ingredient for your culinary creations.",
-    "img": "/img/green.jpg"
+    "img": "/img/products/green.jpg"
   },
   {
     "id": 23,
     "name": "Deep Mirch Boondi",
     "genre": "Spices",
     "description": "Mirch Boondi adds a spicy and crunchy twist to your snacks.",
-    "img": "/img/bon.jpg"
+    "img": "/img/products/bon.jpg"
   },
   {
     "id": 24,
     "name": "Deep Red Chilli Powder 14 Oz",
     "genre": "Spices",
     "description": "Deep Red Chilli Powder adds a fiery touch to your dishes.",
-    "img": "/img/chilli.jpg"
+    "img": "/img/products/chilli.jpg"
   },
   {
     "id": 25,
     "name": "Deep Turmeric Powder 14 Oz",
     "genre": "Spices",
     "description": "Deep Turmeric Powder adds a vibrant color and flavor to your culinary creations.",
-    "img": "/img/pow.jpg"
+    "img": "/img/products/pow.jpg"
   },
   {
     "id": 26,
     "name": "Deep Turmeric Powder 14 Oz",
     "genre": "Spices",
     "description": "Deep Turmeric Powder adds a vibrant color and flavor to your culinary creations.",
-    "img": "/img/pow.jpg"
+    "img": "/img/products/pow.jpg"
   },
   {
     "id": 27,
     "name": "Deep Coriander Seed 400G",
     "genre": "Spices",
     "description": "Deep Coriander Seeds add a warm and citrusy flavor to your dishes.",
-    "img": "/img/seed.jpg"
+    "img": "/img/products/seed.jpg"
   },
   {
     "id": 28,
     "name": "Deep Coriander Powder 14 Oz",
     "genre": "Spices",
     "description": "Deep Coriander Powder adds a warm and citrusy flavor to your dishes.",
-    "img": "/img/pod.jpg"
+    "img": "/img/products/pod.jpg"
   },
   {
     "id": 29,
     "name": "Deep Cumin Seeds 14 Oz",
     "genre": "Spices",
     "description": "Deep Cumin Seeds add a nutty and earthy flavor to your dishes.",
-    "img": "/img/cumin.jpg"
+    "img": "/img/products/cumin.jpg"
   },
   {
     "id": 30,
     "name": "Deep Cumin Powder 14 Oz",
     "genre": "Spices",
     "description": "Deep Cumin Powder adds a nutty and earthy flavor to your dishes.",
-    "img": "/img/co.jpg"
+    "img": "/img/products/co.jpg"
   },
   {
     "id": 31,
     "name": "Deep Fennel Seed 400G",
     "genre": "Spices",
     "description": "Deep Fennel Seeds add a sweet and aromatic flavor to your dishes.",
-    "img": "/img/fen.jpg"
+    "img": "/img/products/fen.jpg"
   },
   {
     "id": 32,
     "name": "Dep Methi Seed 400G",
     "genre": "Spices",
     "description": "Methi Seeds add a nutty and slightly bitter flavor to your dishes.",
-    "img": "/img/sd.jpg"
+    "img": "/img/products/sd.jpg"
   },
   {
     "id": 33,
     "name": "Deep Garam ",
     "genre": "Spices",
     "description": "Garam Masala is a fragrant and warming spice blend essential in Indian cuisine.",
-    "img": "/img/mas.jpg"
+    "img": "/img/products/mas.jpg"
   },
   {
     "id": 34,
@@ -242,217 +242,217 @@
     "name": "Deep Coriander Pow 7Oz",
     "genre": "Spices",
     "description": "Deep Coriander Powder adds a warm and citrusy flavor to your dishes.",
-    "img": "/img/corainder.jpg"
+    "img": "/img/products/corainder.jpg"
   },
   {
     "id": 36,
     "name": "Deep Cumin Seed 7Oz",
     "genre": "Spices",
     "description": "Deep Cumin Seeds add a nutty and earthy flavor to your dishes.",
-    "img": "/img/come.png"
+    "img": "/img/products/come.png"
   },
   {
     "id": 37,
     "name": "Deep Cumin Pwdr200Gm",
     "genre": "Spices",
     "description": "Deep Cumin Powder adds a nutty and earthy flavor to your dishes.",
-    "img": "/img/old.jpg"
+    "img": "/img/products/old.jpg"
   },
   {
     "id": 38,
     "name": "Deep Mango Powder 7 Oz",
     "genre": "Spices",
     "description": "Deep Mango Powder adds a tangy and sour flavor to your dishes.",
-    "img": "/img/amchur.jpg"
+    "img": "/img/products/amchur.jpg"
   },
   {
     "id": 39,
     "name": "Deep Blk Salt 100G",
     "genre": "Spices",
     "description": "Black Salt adds a distinctive and slightly sulfurous flavor to your dishes.",
-    "img": "/img/blackk.jpg"
+    "img": "/img/products/blackk.jpg"
   },
   {
     "id": 40,
     "name": "Deep Garam  Mix Of Spices 7 Oz",
     "genre": "Spices",
     "description": "Garam Masala is a fragrant and warming spice blend essential in Indian cuisine.",
-    "img": "/img/garam.jpg"
+    "img": "/img/products/garam.jpg"
   },
   {
     "id": 41,
     "name": "Deep Ghee Cow 32 Oz",
     "genre": "Dairy",
     "description": "Pure and rich cow's ghee for a delightful cooking experience.",
-    "img": "/img/deep.jpg"
+    "img": "/img/products/deep.jpg"
   },
   {
     "id": 42,
     "name": "Deep Ghee",
     "genre": "Dairy",
     "description": "Pure and rich ghee for a delightful cooking experience.",
-    "img": "/img/lo.jpg"
+    "img": "/img/products/lo.jpg"
   },
   {
     "id": 43,
     "name": "Deep Mustard Seeds 14 Oz",
     "genre": "Spices",
     "description": "Mustard Seeds add a sharp and pungent flavor to your dishes.",
-    "img": "/img/mus.jpg"
+    "img": "/img/products/mus.jpg"
   },
   {
     "id": 44,
     "name": "Deep curry pwdr 7oz",
     "genre": "Spices",
     "description": "Curry Powder adds a complex and aromatic flavor to your dishes.",
-    "img": "/img/curry.jpg"
+    "img": "/img/products/curry.jpg"
   },
   {
     "id": 45,
     "name": "Bansi Dalia Split 409G",
     "genre": "Grains",
     "description": "Dalia Split is a versatile and healthy grain for your culinary creations.",
-    "img": "/img/bansi.jpg"
+    "img": "/img/products/bansi.jpg"
   },
   {
     "id": 46,
     "name": "Bansi Roasted Dalia Split 200G",
     "genre": "Grains",
     "description": "Roasted Dalia Split is a healthy and quick-cooking grain option.",
-    "img": "/img/roasted.jpg"
+    "img": "/img/products/roasted.jpg"
   },
   {
     "id": 47,
     "name": "Bansi Roast Chana 400G",
     "genre": "Grains",
     "description": "Roasted Chana is a healthy and crunchy addition to your snacks.",
-    "img": "/img/channa.jpg"
+    "img": "/img/products/channa.jpg"
   },
   {
     "id": 48,
     "name": "Deep Red Chilli Ex Hot",
     "genre": "Spices",
     "description": "Deep Red Chilli Ex Hot is an extra hot chili powder that adds intense heat and flavor to your dishes. Handle with caution!",
-    "img": "/img/hot.jpg"
+    "img": "/img/products/hot.jpg"
   },
   {
     "id": 49,
     "name": "Deep Red Chilli Ex Hot 7oz",
     "genre": "Spices",
     "description": "Deep Red Chilli Ex Hot in a convenient 7oz pack. Add a fiery kick to your recipes with this extra hot chili powder.",
-    "img": "/img/hot.jpg"
+    "img": "/img/products/hot.jpg"
   },
   {
     "id": 50,
     "name": "Deep Kalonji 100G",
     "genre": "Spices",
     "description": "Deep Kalonji, also known as black cumin or nigella seeds, adds a unique and aromatic flavor to your culinary creations.",
-    "img": "/img/kalo.jpg"
+    "img": "/img/products/kalo.jpg"
   },
   {
     "id": 51,
     "name": "Deep Sooji 2 Lbs",
     "genre": "Grains",
     "description": "Deep Sooji is a versatile grain product commonly used in Indian cuisine. Ideal for making delicious desserts and savory dishes.",
-    "img": "/img/suji.jpg"
+    "img": "/img/products/suji.jpg"
   },
   {
     "id": 52,
     "name": "Deep Cow Ghee 236Ml",
     "genre": "Dairy",
     "description": "Deep Cow Ghee is a pure and flavorful cooking fat, perfect for enhancing the taste of your favorite dishes. A kitchen essential.",
-    "img": "/img/ghee.jpg"
+    "img": "/img/products/ghee.jpg"
   },
   {
     "id": 53,
     "name": "Deep Mango Drink Small",
     "genre": "Beverage",
     "description": "Deep Mango Drink in a small and convenient size. Enjoy the sweet and tropical taste of mango in every sip.",
-    "img": "/img/cold.jpg"
+    "img": "/img/products/cold.jpg"
   },
   {
     "id": 54,
     "name": "Deep Mango Drink",
     "genre": "Beverage",
     "description": "Deep Mango Drink is a refreshing beverage with the delicious flavor of ripe mangoes. Perfect for hot summer days.",
-    "img": "/img/cool.jpg"
+    "img": "/img/products/cool.jpg"
   },
   {
     "id": 55,
     "name": "Deep Toor Dal",
     "genre": "Grains",
     "description": "Deep Toor Dal is a popular lentil variety that cooks quickly and is rich in protein. A staple in Indian households.",
-    "img": "/img/dal.jpg"
+    "img": "/img/products/dal.jpg"
   },
   {
     "id": 56,
     "name": "Dep Toir Dal 4Lb",
     "genre": "Grains",
     "description": "Deep Toor Dal in a family-sized 4lb pack. An excellent source of protein for a wholesome and nutritious diet.",
-    "img": "/img/toor.jpg"
+    "img": "/img/products/toor.jpg"
   },
   {
     "id": 57,
     "name": "Shaan Masoor Dal",
     "genre": "Grains",
     "description": "Masoor Dal is a red lentil variety known for its quick cooking time and earthy flavor. A versatile and nutritious choice.",
-    "img": "/img/shan.jpeg"
+    "img": "/img/products/shan.jpeg"
   },
   {
     "id": 58,
     "name": "Deep Urad Whol 2Lb",
     "genre": "Grains",
     "description": "Deep Urad Whole is a black gram variety with a rich and nutty flavor. Ideal for traditional Indian recipes.",
-    "img": "/img/urad.jpeg"
+    "img": "/img/products/urad.jpeg"
   },
   {
     "id": 59,
     "name": "Deep Moong Whol 2Lb",
     "genre": "Grains",
     "description": "Deep Moong Whole is a green gram variety with a mild and earthy flavor. Perfect for a variety of dishes.",
-    "img": "/img/wholee.jpg"
+    "img": "/img/products/wholee.jpg"
   },
   {
     "id": 60,
     "name": "Kala Chan",
     "genre": "Grains",
     "description": "Kala Chana, also known as black chickpeas, is a nutritious and flavorful legume. Great for curries, salads, and snacks.",
-    "img": "/img/chana.jpg"
+    "img": "/img/products/chana.jpg"
   },
   {
     "id": 61,
     "name": "Deep Kabuli Chana",
     "genre": "Grains",
     "description": "Deep Kabuli Chana is a variety of chickpeas with a creamy texture. Versatile and delicious in a variety of dishes.",
-    "img": "/img/kabuli.jpg"
+    "img": "/img/products/kabuli.jpg"
   },
   {
     "id": 62,
     "name": "Deep chana dal 4lb",
     "genre": "Grains",
     "description": "Deep Chana Dal in a family-sized 4lb pack. A versatile lentil for soups, stews, and various Indian dishes.",
-    "img": "/img/daal.jpg"
+    "img": "/img/products/daal.jpg"
   },
   {
     "id": 63,
     "name": "Deep urad dal 4lb",
     "genre": "Grains",
     "description": "Deep Urad Dal in a family-sized 4lb pack. A rich and creamy lentil perfect for traditional Indian recipes.",
-    "img": "/img/uraad.jpeg"
+    "img": "/img/products/uraad.jpeg"
   },
   {
     "id": 64,
     "name": "Deep Moong Whole 4Lb",
     "genre": "Grains",
     "description": "Deep Moong Whole in a family-sized 4lb pack. A nutritious and versatile ingredient for a variety of recipes.",
-    "img": "/img/wholee.jpg"
+    "img": "/img/products/wholee.jpg"
   },
   {
     "id": 65,
     "name": "Deep Besan 2Lbs",
     "genre": "Grains",
     "description": "Deep Besan is chickpea flour that adds a nutty flavor to your dishes. Ideal for making savory snacks and sweets.",
-    "img": "/img/besan.jpg"
+    "img": "/img/products/besan.jpg"
   },
   {
     "id": 66,

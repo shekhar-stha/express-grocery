@@ -26,7 +26,7 @@ export default function Home() {
 
 
   const spices = products.filter((product) => product.genre === 'Spices');
-
+  const snacks = products.filter((product) => product.genre === 'Snacks');
   return (
     <div>
       <Head>
@@ -42,8 +42,8 @@ export default function Home() {
         </section>
         <ProductCategories />
         <WhyUs />
-        <ProductSlider headerClass="text-start" containerName="Top Selling Products" products={products} />
         <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
+        <ProductSlider headerClass="text-start" containerName="Snacks" products={snacks} />
         <ProductSlider headerClass="text-start" containerName="Spices" products={spices} />
         <Testimonials />
         <Gallery />
