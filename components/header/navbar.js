@@ -21,7 +21,7 @@ export default function Navbar() {
             <div>
               <a title="Phone Number" className="fs-19 text-white" href="tel:+14342847549">
                 <IconPhoneCall className="text-secondary me-3" />
-                <span>+1 434-284-7549</span>
+                <span>+1 (434) 284-7549</span>
               </a>
             </div>
           </div>

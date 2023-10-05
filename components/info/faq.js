@@ -59,7 +59,7 @@ export default function Faq() {
                                 data-bs-parent="#accordionExample">
                                 <div className="accordion-body text-info">
                                     <p>
-                                        You can reach us by phone at +1 434-284-7549. For inquiries and other information, you
+                                        You can reach us by phone at +1 (434) 284-7549. For inquiries and other information, you
                                         can also email us at virginiaannapurna@gmail.com. We're here to assist you!
                                     </p>
                                 </div>
