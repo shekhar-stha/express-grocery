@@ -46,35 +46,35 @@
     "name": "Tetley Elaichi Tb 72Ct",
     "genre": "Tea",
     "description": "Tetley tea with the aromatic goodness of elaichi (cardamom) in convenient 72-count packs.",
-    "img": "/img/products/tea.jpg"
+    "img": "/img/products/tea.png"
   },
   {
     "id": 8,
     "name": "Tetley Ginger Tb 72Ct",
     "genre": "Tea",
     "description": "Tetley tea with the invigorating flavor of ginger in convenient 72-count packs.",
-    "img": "img/tet.jpg"
+    "img": "/img/products/tet.jpg"
   },
   {
     "id": 9,
     "name": "Tetly  72Ct",
     "genre": "Tea",
     "description": "Classic Tetley tea in convenient 72-count packs.",
-    "img": "img/gig.jpg"
+    "img": "/img/products/gig.jpg"
   },
   {
     "id": 10,
     "name": "Tetly Green Tea Honey",
     "genre": "Tea",
     "description": "Tetley Green Tea with the natural sweetness of honey. A delightful and healthy choice.",
-    "img": "img/gg.jpg"
+    "img": "/img/products/gg.jpg"
   },
   {
     "id": 11,
     "name": "Tetley Tb 80Ct",
     "genre": "Tea",
     "description": "Classic Tetley tea in convenient 80-count packs.",
-    "img": "img/bri.jpg"
+    "img": "/img/products/bri.jpg"
   },
   {
     "id": 12,
@@ -235,7 +235,7 @@
     "name": "Deep Turmeric Powder 200G",
     "genre": "Spices",
     "description": "Deep Turmeric Powder adds a vibrant color and flavor to your culinary creations.",
-    "img": "img/pos.jpg"
+    "img": "/img/products/pos.jpg"
   },
   {
     "id": 35,
@@ -564,14 +564,14 @@
     "name": "Deep Karela Ring Cut",
     "genre": "Vegetables",
     "description": "Deep Karela Ring Cut is a flavorful and nutritious vegetable. Ideal for various culinary preparations.",
-    "img": "/img/products/kareela.jpg"
+    "img": "/img/products/karelaa.jpg"
   },
   {
     "id": 82,
     "name": "Deep Surti Papdi Lilva 12 Oz",
     "genre": "Vegetables",
     "description": "Deep Surti Papdi Lilva is a variety of green beans with a sweet and nutty flavor. Perfect for stir-fries and side dishes.",
-    "img": "papdi.jpg"
+    "img": "/img/products/papdi.jpg"
   },
   {
     "id": 83,
@@ -1348,7 +1348,7 @@
     "name": "Bansi puri for bhel",
     "genre": "Snacks",
     "description": "Bansi Puri for Bhel, a crispy and flavorful base for creating the popular Indian street food, Bhel Puri.",
-    "img": "img/bl.jpg"
+    "img": "/img/products/bl.jpg"
   },
   {
     "id": 195,
