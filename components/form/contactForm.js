@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
-export default function ContactForm() {
+export default function ContactForm(props) {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -15,7 +15,7 @@ export default function ContactForm() {
             });
     };
     return (
-        <div className="col-lg-5 col-md-12 col-sm-12" >
+        <div className={`col-lg-5 col-md-12 col-sm-12 ${props.class}`} >
             <div className="contact-section__form">
                 {/* Form Start */}
                 <form ref={form} onSubmit={sendEmail} className="form-group">
