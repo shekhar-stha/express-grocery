@@ -15,6 +15,7 @@ export default function ProductSlider(props) {
     const settings = {
         arrows: false,
         dots: false,
+        lazyLoad: true,
         infinite: false,
         speed: 500,
         slidesToShow: 4,

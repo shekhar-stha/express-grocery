@@ -1,10 +1,12 @@
+import useSWR from "swr";
 
 
 export default function ProductCategories() {
+
   return (
     <section className="product-categories">
       <div className="container">
-        <h3 className="header text-center">Top Categories</h3>
+        <h3 className="header text-center">Product Categories</h3>
         <div className="grid">
           <div className="category">
             <div className="img-div">
