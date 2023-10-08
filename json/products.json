@@ -200,7 +200,7 @@
     "name": "Deep Cumin Seeds 14 Oz",
     "genre": "Spices",
     "description": "Deep Cumin Seeds add a nutty and earthy flavor to your dishes.",
-    "img": "/img/products/cuming.jpg"
+    "img": "/img/products/cumin.png"
   },
   {
     "id": 30,
@@ -242,7 +242,7 @@
     "name": "Deep Coriander Pow 7Oz",
     "genre": "Spices",
     "description": "Deep Coriander Powder adds a warm and citrusy flavor to your dishes.",
-    "img": "/img/products/corainder.jpg"
+    "img": "/img/products/corainder.png"
   },
   {
     "id": 36,
@@ -1033,7 +1033,7 @@
     "name": "Deep Coriander Chutney 10Oz",
     "genre": "Sauces",
     "description": "Deep Coriander Chutney is a flavorful accompaniment to various Indian snacks and dishes. Each pack contains 10 ounces.",
-    "img": "/img/products/tt.jpg"
+    "img": "/img/products/tt.png"
   },
   {
     "id": 150,

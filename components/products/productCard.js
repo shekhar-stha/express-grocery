@@ -5,7 +5,7 @@ export default function ProductCard(props) {
     return (
         <div className={("product position-relative home-product ") + (props?.class)}>
 
-            <img src={props?.img} alt={props?.name} />
+            <img src={props?.img} alt={props?.name} loading="lazy" />
             <div className="products-info px-sm-3 px-2">
                 <span className="store fs-14">{props?.category}</span>
                 <h5 className="product-name fw-500">{props?.name}</h5>
