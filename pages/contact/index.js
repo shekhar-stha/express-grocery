@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../../components/header/navbar';
 import Footer from '../../components/info/footer';
+import ContactForm from '../../components/form/contactForm';
 
 export default function Contact() {
   return (
@@ -49,87 +50,11 @@ export default function Contact() {
                       </div>
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="map">
-                      <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.8135107226433!2d-78.48873864164375!3d38.0630327318435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b387596b3bbed5%3A0xd939c13922b48116!2sExpress%20Grocery%20Store!5e0!3m2!1sen!2snp!4v1696521214670!5m2!1sen!2snp" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-                    </div>
+                  <div className="map">
+                    <iframe title="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.8135107226433!2d-78.48873864164375!3d38.0630327318435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b387596b3bbed5%3A0xd939c13922b48116!2sExpress%20Grocery%20Store!5e0!3m2!1sen!2snp!4v1696521214670!5m2!1sen!2snp" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
                   </div>
                 </div>
-                {/* CONTACT FORM STARTS HERE */}
-                <div className="col-lg-5 col-md-12 col-sm-12">
-                  <div className="contact-section__form">
-                    {/* Form Start */}
-                    <form action="#" className="form-group">
-                      <h1 className="contact-form-right__form-title fs-22 text-primary">Contact Us</h1>
-                      {/* Lead add 1st row  */}
-                      <div className="contact-form-right__row">
-
-                        {/* Full Name  */}
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                          <label htmlFor="fullname" className="contact-form-right__title">
-                            Full Name<span className="red-star">*</span>
-                          </label>
-
-                          <input
-
-                            id="fullname"
-                            type="text"
-                            name="fullname"
-                            placeholder="Enter full name"
-                            className="form-control"
-                          />
-
-
-                        </div>
-                      </div>
-
-                      {/* Lead add 3rd row  */}
-                      <div className="contact-form-right__row">
-                        {/* Number  */}
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                          <label htmlFor="number" className="contact-form-right__title">
-                            Number<span className="red-star">*</span>
-                          </label>
-
-                          <input
-
-                            id="number"
-                            type="text"
-                            name="number"
-                            placeholder="Enter your phone number"
-                            className="form-control"
-                          />
-
-                        </div>
-                      </div>
-
-                      {/* Lead add 3rd row  */}
-                      <div className="contact-form-right__row">
-                        {/* message  */}
-                        <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                          <label htmlFor="message" className="contact-form-right__title">
-                            Message<span className="red-star">*</span>
-                          </label>
-
-                          <textarea
-
-                            className="form-control"
-                            placeholder="Type your message..."
-                            id="message"
-                            rows={5}
-                            defaultValue={""} />
-
-                        </div>
-                      </div>
-                      {/* Lead add 6th row  */}
-                      <div className="contact-form-right__btns">
-                        <button type="submit" className="btn contact-form-btn w-100 mt-5">
-                          Send Message
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
+                <ContactForm />
               </div>
             </div>
           </div>
