@@ -28,3 +28,13 @@ nav {
         }
     }
 }
+
+.top-information{
+    a{
+        font-size: 18px;
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+}

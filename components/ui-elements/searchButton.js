@@ -11,6 +11,8 @@ const SearchComponent = (props) => {
 
     if (query.trim() !== '') {
       router.push(`/search/${encodeURIComponent(query)}`);
+    } else{
+      router.push(`/search/ `);   
     }
   };
   return (

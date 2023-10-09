@@ -9,9 +9,9 @@ const Gallery = () => {
     '/img/gallery-1.JPG',
     '/img/gallery-2.JPG',
     '/img/indian-shopping.jpg',
-    '/img/gallery-3.JPG',
+    '/img/gifting-phone.jpg',
     '/img/gallery-5.JPG',
-    '/img/couples-shopping.jpg',
+    '/img/shipping-ready.jpg',
   ];
 
   const handleImageClick = (index) => {

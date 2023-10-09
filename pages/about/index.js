@@ -11,7 +11,7 @@ export default function About() {
         <>
             <Navbar />
             <div className='mt-5'>
-                <AboutUs />
+                <AboutUs img="/img/prashanna.jpg" />
             </div>
             <WhyUs />
             <Gallery />

@@ -54,8 +54,8 @@ export default function Hero() {
                             </a>
                         </div>
                     </div>
-                    <div className="img-div">
-                        <img className="hero-img" src="/img/hero-lady.png" alt="Painter Painting" />
+                    <div className="img-div ps-2">
+                        <img className="hero-img" src="/img/hero-lady.png" alt="Lady Shopping" />
 
                     </div>
                 </div>

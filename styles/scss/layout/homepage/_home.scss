@@ -1,8 +1,8 @@
 .home {
     &::after {
         content: "";
-        width: 50%;
-        height: 150%;
+        width: 0%;
+        height: 0%;
         position: absolute;
         background-color: $primary;
         top: 0%;
@@ -24,7 +24,7 @@
 }
 
 .nav-hero {
-    background-color: $primary;
+    background-color: rgb(50, 103, 73, 0.95);
     position: relative;
 
     @media (max-width: 1200px) {
@@ -39,13 +39,12 @@
         object-fit: cover;
         z-index: -1;
 
-        @media (min-width: 1200px) {
-            display: none;
-        }
+        // @media (min-width: 1200px) {
+        //     display: none;
+        // }
     }
 
     .hero {
-
         @media (max-width: 1200px) {
             padding: 3rem 0 3rem;
         }
@@ -117,7 +116,10 @@
         .img-div {
             width: 50%;
             z-index: 2;
-
+            @media (max-width: 1400px) {
+                display: flex;
+                
+            }
             @media (max-width:1200px) {
                 width: 0%;
                 height: 0%;
@@ -130,6 +132,12 @@
                 object-fit: cover;
                 z-index: 2;
                 min-height: 600px;
+
+                @media (max-width: 1400px) {
+                    min-height: inherit;
+                   height: 520px;
+                   margin-top: auto;
+                }
 
                 @media (max-width: 1200px) {
                     //   height: 90%;
@@ -331,14 +339,8 @@
             height: 100%;
             object-fit: cover;
 
-            @media (max-width: 1200px) {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-
-            @media (max-width: 576px) {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
+            @media (max-width:992px) {
+                min-height: 30rem;
             }
         }
 
@@ -406,7 +408,8 @@
         align-items: center;
         padding-top: 1.5rem;
 
-        i,svg {
+        i,
+        svg {
             font-size: 32px;
             background-color: $secondary;
             padding: 1.5rem;
@@ -432,6 +435,9 @@
         gap: 1rem;
         padding: 2rem 0rem;
 
+        @media (max-width: 992px) {
+            column-count: 2;
+        }
         @media (max-width: 576px) {
             column-count: 1;
         }
@@ -537,9 +543,9 @@ footer {
         }
 
         .text-info {
+            margin-bottom: 0.7rem;
             p {
-                margin-bottom: 0.5rem;
-
+                margin-bottom: 0.7rem;
                 a {
                     line-height: 25px;
                 }

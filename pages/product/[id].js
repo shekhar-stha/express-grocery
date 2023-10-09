@@ -17,8 +17,14 @@ export default function ProductInfo() {
 
     const { data, error } = useSWR('/api/staticdata', fetcher);
 
-    if (error) return <div>Error loading data</div>;
-    if (!data) return <div>Loading...</div>;
+  if (error) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+    <h1>Error loading data</h1>
+  </section>;
+  if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+    <div class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </section>;
 
     console.log(data)
     const products = JSON.parse(data);

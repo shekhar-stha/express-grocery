@@ -9,8 +9,14 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Grocery() {
     const { data, error } = useSWR('/api/staticdata', fetcher);
 
-    if (error) return <div>Error loading data</div>;
-    if (!data) return <div>Loading...</div>;
+  if (error) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+    <h1>Error loading data</h1>
+  </section>;
+  if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+    <div class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </section>;
   
     const products = JSON.parse(data);
     console.log("Products" + products)
@@ -25,6 +31,7 @@ export default function Grocery() {
     const dairy = products.filter((product) => product.genre === 'Dairy');
     const sweets = products.filter((product) => product.genre === 'Sweets');
     const breads = products.filter((product) => product.genre === 'Breads');
+    const juices = products.filter((product) => product.genre === 'Juices');
     return (
         <>
             <Navbar />
@@ -40,6 +47,7 @@ export default function Grocery() {
             <ProductSlider headerClass="text-center" containerName="Dairy" products={dairy} />
             <ProductSlider headerClass="text-center" containerName="Sweets" products={sweets} />
             <ProductSlider headerClass="text-center" containerName="Breads" products={breads} />
+            <ProductSlider headerClass="text-center" containerName="Juices" products={juices} />
             <Footer />
         </>
     )

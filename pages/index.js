@@ -19,8 +19,14 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Home() {
   const { data, error } = useSWR('/api/staticdata', fetcher);
 
-  if (error) return <div>Error loading data</div>;
-  if (!data) return <div>Loading...</div>;
+  if (error) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+    <h1>Error loading data</h1>
+  </section>;
+  if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+    <div class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </section>;
 
   const products = JSON.parse(data);
   console.log("Products" + products)
@@ -32,19 +38,19 @@ export default function Home() {
     <div>
       <Head>
         <title>Homepage</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
       <main>
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
-          <img class="bg-img" src="/img/store-indoor.JPG" alt="Painter painting" />
+          <img class="bg-img" src="/img/gallery-2.JPG" alt="Painter painting" />
         </section>
         <ProductCategories />
         <WhyUs />
         <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
-        <AboutUs />
+        <AboutUs img="/img/prashanna.jpg" />
         <ProductSlider headerClass="text-start" containerName="Snacks" products={snacks} />
         <ProductSlider headerClass="text-start" containerName="Spices" products={spices} />
         <Testimonials />
