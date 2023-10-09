@@ -32,7 +32,7 @@ export default function Footer() {
                             <strong className="text-primary h5 fw-600 fs-16"> Quick Links</strong>
                         </p>
                         <div className="text-info">
-                            <Link title="FAQ" href="/index.html">Search Products</Link>
+                            <Link title="FAQ" href="/search/all">Search Products</Link>
                         </div>
                         <div className="text-info">
                             <Link title="Home" href="/grocery">Grocery</Link>

@@ -14,7 +14,7 @@ export default function Hero() {
                             Best Indian & Nepali Grocery Store in <span className='text-secondary'>Charlottesville, VA</span>
                         </h1>
                         <p className="mx-auto">
-                            From indian food to nepali, we got everything for you.
+                            Discover the Flavors of India and Nepal at Express Grocery Store!
                         </p>
                         <div className="d-flex flex-vsm-row 
                         flex-column mt-xl-4 mt-sm-5 mt-5 pb-4">
