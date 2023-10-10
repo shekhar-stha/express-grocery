@@ -4,6 +4,7 @@ import AboutUs from '../../components/info/AboutUs'
 import Footer from '../../components/info/Footer'
 import Gallery from '../../components/info/Gallery'
 import WhyUs from '../../components/info/WhyUs'
+import Head from 'next/head'
 
 
 export default function About() {
@@ -17,7 +18,7 @@ export default function About() {
             </Head>
             <Navbar />
             <div className='mt-5'>
-                <AboutUs />
+                <AboutUs img="/img/prashanna.jpg" />
             </div>
             <WhyUs />
             <Gallery />
