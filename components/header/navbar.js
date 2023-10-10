@@ -1,9 +1,9 @@
 import Image from "next/image";
-import CallNow from "../buttons/callNow";
+import CallNow from "../buttons/CallNow";
 import { IconCurrentLocation } from '@tabler/icons-react';
 import { IconPhoneCall } from '@tabler/icons-react';
 import Link from "next/link";
-import SearchComponent from "../ui-elements/searchButton";
+import SearchComponent from "../ui-elements/SearchButton";
 
 export default function Navbar() {
   return (

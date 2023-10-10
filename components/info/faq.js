@@ -1,14 +1,14 @@
 
 export default function Faq() {
     return (
-        <section class="faq my-5" id="faq">
-            <div class="container py-5">
-                <div class="small-big-header mb-4">
-                    <p class="sub-header">FAQ</p>
+        <section className="faq my-5" id="faq">
+            <div className="container py-5">
+                <div className="small-big-header mb-4">
+                    <p className="sub-header">FAQ</p>
                     <h3 className="header">We got answers for you</h3>
                 </div>
-                <div class="row">
-                    <div class="accordion col-lg col-12" id="accordionExample ">
+                <div className="row">
+                    <div className="accordion col-lg col-12" id="accordionExample ">
                         <div className="accordion-item">
                             <h2 className="accordion-header accordion-topic mb-0 pb-0" id="headingOne">
                                 <button className="accordion-button" type="button" data-bs-toggle="collapse"
@@ -47,7 +47,7 @@ export default function Faq() {
                         </div>
                     </div>
 
-                    <div class="accordion col-lg col-12" id="accordionExample">
+                    <div className="accordion col-lg col-12" id="accordionExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header accordion-topic mb-0 pb-0" id="headingThree">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"

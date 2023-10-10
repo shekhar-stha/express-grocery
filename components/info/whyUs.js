@@ -1,5 +1,5 @@
 import React from 'react'
-import CallNow from '../buttons/callNow'
+import CallNow from '../buttons/CallNow'
 
 export default function WhyUs() {
     return (

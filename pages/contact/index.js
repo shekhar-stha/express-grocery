@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Navbar from '../../components/header/navbar';
-import Footer from '../../components/info/footer';
+import Navbar from '../../components/header/Navbar';
+import Footer from '../../components/info/Footer';
 import ContactForm from '../../components/form/contactForm';
 
 export default function Contact() {
@@ -10,6 +10,9 @@ export default function Contact() {
       <Head>
         <title>Contact</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Contact Express Grocery Store - your one-stop shop for quality Indian and Nepali groceries in Charlottesville." />
+        <meta name="keywords" content="Indian grocery store, Nepali food, Charlottesville market, Local grocery shop, Cultural ingredients, Specialty store, Family-owned business, Ethnic products,
+        Community-driven, Quality assurance" />
       </Head>
 
       <Navbar />

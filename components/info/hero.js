@@ -1,8 +1,8 @@
 import React from 'react'
-import CallNow from '../buttons/callNow'
+import CallNow from '../buttons/CallNow'
 import { IconStarFilled } from '@tabler/icons-react';
 
-import SearchComponent from '../ui-elements/searchButton';
+import SearchComponent from '../ui-elements/SearchButton';
 import Link from 'next/link';
 export default function Hero() {
     return (

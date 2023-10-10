@@ -1,18 +1,18 @@
 import Head from 'next/head';
-import Navbar from '../components/header/navbar';
-import ProductCategories from '../components/products/productCategories';
-import WhyUs from '../components/info/whyUs';
-import CallNow from '../components/buttons/callNow';
-import ProductSlider from '../components/products/productSlider';
+import Navbar from '../components/header/Navbar';
+import ProductCategories from '../components/products/ProductCategories';
+import WhyUs from '../components/info/WhyUs';
+import CallNow from '../components/buttons/CallNow';
+import ProductSlider from '../components/products/ProductSlider';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
-import Faq from '../components/info/faq';
-import Testimonials from '../components/info/testimonials';
-import Footer from '../components/info/footer';
+import Faq from '../components/info/Faq';
+import Testimonials from '../components/info/Testimonials';
+import Footer from '../components/info/Footer';
 // import products from '../json/products';
-import Hero from '../components/info/hero';
-import Gallery from '../components/info/gallery';
-import AboutUs from '../components/info/aboutUs';
+import Hero from '../components/info/Hero';
+import Gallery from '../components/info/Gallery';
+import AboutUs from '../components/info/AboutUs';
 import Image from 'next/image';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -24,8 +24,8 @@ export default function Home() {
     <h1>Error loading data</h1>
   </section>;
   if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
-    <div class="spinner-grow" role="status">
-      <span class="sr-only">Loading...</span>
+    <div className="spinner-grow" role="status">
+      <span className="sr-only">Loading...</span>
     </div>
   </section>;
 
@@ -38,20 +38,22 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Homepage</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <title>Express Grocery Store | Indian Nepali Grocery Store</title>
+        <meta name="description" content="Explore a diverse range of Indian and Nepali groceries at Express Grocery Store in Charlottesville. Enjoy free delivery over $40" />
+        <meta name="keywords" content="Indian groceries, Nepali groceries, Express Grocery Store, 
+        Best Indian Grocery, Grocery Store Charlottesville" />
       </Head>
 
       <main>
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
-          <Image class="bg-img" width={1400} height={100} src="/img/gallery-2.JPG" alt="Store BG Image" />
+          <Image className="bg-img" width={1400} height={100} src="/img/gallery-2.JPG" alt="Store BG Image" />
         </section>
         <ProductCategories />
         <WhyUs />
         <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
-        <AboutUs img="/img/prashanna.jpg" />
+        <AboutUs img="/img/store-indoor.jpg" />
         <ProductSlider headerClass="text-start" containerName="Snacks" products={snacks} />
         <ProductSlider headerClass="text-start" containerName="Spices" products={spices} />
         <Testimonials />
@@ -62,3 +64,15 @@ export default function Home() {
     </div>
   );
 }
+
+// export async function getStaticProps() {
+//   const data = await fetcher('/api/staticdata');
+//   const products = JSON.parse(data);
+
+//   return {
+//     props: {
+//       products,
+//     },
+//     revalidate: 60,
+//   };
+// }

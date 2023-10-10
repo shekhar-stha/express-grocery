@@ -1,12 +1,12 @@
 import { useRouter } from 'next/router';
 import React from 'react'
 import useSWR from 'swr';
-import Navbar from '../../components/header/navbar';
+import Navbar from '../../components/header/Navbar';
 import Head from 'next/head';
-import CallNow from '../../components/buttons/callNow';
-import ProductSlider from '../../components/products/productSlider';
-import Gallery from '../../components/info/gallery';
-import Footer from '../../components/info/footer';
+import CallNow from '../../components/buttons/CallNow';
+import ProductSlider from '../../components/products/ProductSlider';
+import Gallery from '../../components/info/Gallery';
+import Footer from '../../components/info/Footer';
 import Link from 'next/link';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
@@ -21,8 +21,8 @@ export default function ProductInfo() {
     <h1>Error loading data</h1>
   </section>;
   if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
-    <div class="spinner-grow" role="status">
-      <span class="sr-only">Loading...</span>
+    <div className="spinner-grow" role="status">
+      <span className="sr-only">Loading...</span>
     </div>
   </section>;
 
