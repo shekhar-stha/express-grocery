@@ -13,6 +13,7 @@ import Footer from '../components/info/footer';
 import Hero from '../components/info/hero';
 import Gallery from '../components/info/gallery';
 import AboutUs from '../components/info/aboutUs';
+import Image from 'next/image';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -45,7 +46,7 @@ export default function Home() {
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
-          <img class="bg-img" src="/img/gallery-2.JPG" alt="Painter painting" />
+          <Image class="bg-img" width={1400} height={100} src="/img/gallery-2.JPG" alt="Store BG Image" />
         </section>
         <ProductCategories />
         <WhyUs />
