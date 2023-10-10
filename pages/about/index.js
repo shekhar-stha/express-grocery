@@ -18,7 +18,7 @@ export default function About() {
             </Head>
             <Navbar />
             <div className='mt-5'>
-                <AboutUs img="/img/prashanna.jpg" />
+                <AboutUs img="/img/store-indoor.JPG" />
             </div>
             <WhyUs />
             <Gallery />

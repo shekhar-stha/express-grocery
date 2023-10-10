@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function AboutUs(props) {
     return (
-        <section id="about" className="about-us container">
+        <section id="about" className="about-us container pb-3">
             <div className="row flex-row-reverse gap-lg-5">
                 <div data-aos="fade-left" className="col-xl mb-lg-0 mb-5 info-side">
                     <p className="sub-header">About Us</p>
@@ -31,8 +31,8 @@ export default function AboutUs(props) {
                     </div>
                 </div>
 
-                <div data-aos="fade-right" className="col-xl px-0 img-side">
-                    <img src={props.img} loading='lazy' alt="AC Outside" />
+                <div data-aos="fade-right" className="col-xl px-0 img-side ">
+                    <img className='shadow' src={props.img} loading='lazy' alt="AC Outside" />
                     <div className="data-top">
                         <p><span>Free Delivery</span> <br /> Over 40$</p>
                     </div>
