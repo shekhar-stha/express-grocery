@@ -1,14 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
+
 import Navbar from '../../components/header/Navbar';
-import Footer from '../../components/info/Footer';
 import ContactForm from '../../components/form/contactForm';
+import Footer from '../../components/info/Footer';
 
 export default function Contact() {
   return (
     <div>
       <Head>
-        <title>Contact</title>
+        <title>Contact Express Grocery Store | Indian Nepali Grocery</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Contact Express Grocery Store - your one-stop shop for quality Indian and Nepali groceries in Charlottesville." />
         <meta name="keywords" content="Indian grocery store, Nepali food, Charlottesville market, Local grocery shop, Cultural ingredients, Specialty store, Family-owned business, Ethnic products,

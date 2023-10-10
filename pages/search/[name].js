@@ -48,12 +48,18 @@ export default function Search() {
 
     const uniqueGenres = [...new Set(products.map(product => product.genre))];
     console.log(uniqueGenres);
-    
+
     const handleViewMore = () => {
         setDisplayedProducts(displayedProducts + 8);
     };
     return (
         <>
+            <Head>
+                <title>Express Grocery | Indian Nepali Grocery Store</title>
+                <meta name="description" content="Explore a diverse range of Indian and Nepali groceries at Express Grocery Store in Charlottesville. Enjoy free delivery over $40" />
+                <meta name="keywords" content="Indian groceries, Nepali groceries, Express Grocery Store, 
+                        Best Indian Grocery, Grocery Store Charlottesville" />
+            </Head>
             <Navbar />
             <section className=" mt-5">
                 <div className="container">

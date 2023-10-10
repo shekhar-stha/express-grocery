@@ -33,8 +33,9 @@ export default function Home() {
   console.log("Products" + products)
 
 
-  const spices = products.filter((product) => product.genre === 'Spices');
-  const snacks = products.filter((product) => product.genre === 'Snacks');
+  const spices = products.filter((product) => product.genre === 'Spices').slice(0, 10)
+  const snacks = products.filter((product) => product.genre === 'Snacks').slice(0, 10)
+  const allProducts = products.slice(0, 30)
   return (
     <div>
       <Head>
@@ -48,11 +49,11 @@ export default function Home() {
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
-          <Image className="bg-img" width={1400} height={100} src="/img/gallery-2.JPG" alt="Store BG Image" />
+          <Image className="bg-img" loading='lazy' width={1400} height={100} src="/img/gallery-2.JPG" alt="Store BG Image" />
         </section>
         <ProductCategories />
         <WhyUs />
-        <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
+        <ProductSlider headerClass="text-start" containerName="All Products" products={allProducts} />
         <AboutUs img="/img/store-indoor.jpg" />
         <ProductSlider headerClass="text-start" containerName="Snacks" products={snacks} />
         <ProductSlider headerClass="text-start" containerName="Spices" products={spices} />

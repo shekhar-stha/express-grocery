@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Lightbox from 'react-18-image-lightbox';
 import 'react-18-image-lightbox/style.css';
@@ -27,9 +28,9 @@ const Gallery = () => {
         <div className="gallery-photos">
           {images.map((src, index) => (
             <div className="image" key={index}>
-              <a title={`Gallery Photo ${index + 1}`} href={src} data-lightbox={`Gallery${index}`}>
-                <img src={src} alt={`Gallery Photo ${index + 1}`} onClick={() => handleImageClick(index)} />
-              </a>
+              <Link title={`Gallery Photo ${index + 1}`} href={src} data-lightbox={`Gallery${index}`}>
+                <img src={src} loading='lazy' alt={`Gallery Photo ${index + 1}`} onClick={() => handleImageClick(index)} />
+              </Link>
             </div>
           ))}
         </div>

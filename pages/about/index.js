@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/header/Navbar'
-import Footer from '../../components/info/Footer'
 import AboutUs from '../../components/info/AboutUs'
-import WhyUs from '../../components/info/WhyUs'
-import ContactForm from '../../components/form/contactForm'
+import Footer from '../../components/info/Footer'
 import Gallery from '../../components/info/Gallery'
+import WhyUs from '../../components/info/WhyUs'
+
 
 export default function About() {
     return (
@@ -17,7 +17,7 @@ export default function About() {
             </Head>
             <Navbar />
             <div className='mt-5'>
-                <AboutUs img="/img/prashanna.jpg" />
+                <AboutUs />
             </div>
             <WhyUs />
             <Gallery />

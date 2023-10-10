@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-xl bg-white">
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src="/img/logo.png" alt="logo" className="logo" />
+            <img src="/img/logo.png" loading="lazy" alt="logo" className="logo" />
           </a>
 
           <button className="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

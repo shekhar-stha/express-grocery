@@ -17,14 +17,14 @@ export default function ProductInfo() {
 
     const { data, error } = useSWR('/api/staticdata', fetcher);
 
-  if (error) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
-    <h1>Error loading data</h1>
-  </section>;
-  if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
-    <div className="spinner-grow" role="status">
-      <span className="sr-only">Loading...</span>
-    </div>
-  </section>;
+    if (error) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+        <h1>Error loading data</h1>
+    </section>;
+    if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
+        <div className="spinner-grow" role="status">
+            <span className="sr-only">Loading...</span>
+        </div>
+    </section>;
 
     console.log(data)
     const products = JSON.parse(data);
@@ -38,7 +38,9 @@ export default function ProductInfo() {
 
         <>
             <Head>
-                <title>Homepage</title>
+                <title>{product?.name} {product?.genre} | Express Grocery Store</title>
+                <meta name="description" content={product?.description} />
+                <meta name="keywords" content={`${product?.name}, ${product?.genre}, Express Grocery, Indian Grocery Charlottesville, Nepali Grocery Charlottesville`} />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>

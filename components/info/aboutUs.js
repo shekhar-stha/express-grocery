@@ -32,7 +32,7 @@ export default function AboutUs(props) {
                 </div>
 
                 <div data-aos="fade-right" className="col-xl px-0 img-side">
-                    <img src={props.img} alt="AC Outside" />
+                    <img src={props.img} loading='lazy' alt="AC Outside" />
                     <div className="data-top">
                         <p><span>Free Delivery</span> <br /> Over 40$</p>
                     </div>
