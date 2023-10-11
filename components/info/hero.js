@@ -1,8 +1,8 @@
 import React from 'react'
-import CallNow from '../buttons/CallNow'
+import CallNow from '../buttons/callNow'
 import { IconStarFilled } from '@tabler/icons-react';
 
-import SearchComponent from '../ui-elements/SearchButton';
+import SearchComponent from '../ui-elements/searchButton';
 import Link from 'next/link';
 export default function Hero() {
     return (
@@ -55,7 +55,7 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className="img-div ps-2">
-                        <img className="hero-img" src="/img/hero-lady.png" loading='lazy' alt="Lady Shopping" />
+                        <img className="hero-img" src="/img/hero-lady.png" alt="Lady Shopping" />
 
                     </div>
                 </div>

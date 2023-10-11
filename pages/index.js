@@ -1,19 +1,18 @@
 import Head from 'next/head';
-import Navbar from '../components/header/Navbar';
-import ProductCategories from '../components/products/ProductCategories';
-import WhyUs from '../components/info/WhyUs';
-import CallNow from '../components/buttons/CallNow';
-import ProductSlider from '../components/products/ProductSlider';
+import Navbar from '../components/header/navbar';
+import ProductCategories from '../components/products/productCategories';
+import WhyUs from '../components/info/whyUs';
+import CallNow from '../components/buttons/callNow';
+import ProductSlider from '../components/products/productSlider';
 import { useEffect, useState } from 'react';
 import useSWR from 'swr';
-import Faq from '../components/info/Faq';
-import Testimonials from '../components/info/Testimonials';
-import Footer from '../components/info/Footer';
+import Faq from '../components/info/faq';
+import Testimonials from '../components/info/testimonials';
+import Footer from '../components/info/footer';
 // import products from '../json/products';
-import Hero from '../components/info/Hero';
-import Gallery from '../components/info/Gallery';
-import AboutUs from '../components/info/AboutUs';
-import Image from 'next/image';
+import Hero from '../components/info/hero';
+import Gallery from '../components/info/gallery';
+import AboutUs from '../components/info/aboutUs';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
@@ -24,8 +23,8 @@ export default function Home() {
     <h1>Error loading data</h1>
   </section>;
   if (!data) return <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
-    <div className="spinner-grow" role="status">
-      <span className="sr-only">Loading...</span>
+    <div class="spinner-grow" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
   </section>;
 
@@ -33,9 +32,8 @@ export default function Home() {
   console.log("Products" + products)
 
 
-  const spices = products.filter((product) => product.genre === 'Spices').slice(0, 10)
-  const snacks = products.filter((product) => product.genre === 'Snacks').slice(0, 10)
-  const allProducts = products.slice(0, 30)
+  const spices = products.filter((product) => product.genre === 'Spices');
+  const snacks = products.filter((product) => product.genre === 'Snacks');
   return (
     <div>
       <Head>
@@ -49,12 +47,12 @@ export default function Home() {
         <section className='nav-hero home'>
           <Navbar />
           <Hero />
-          <Image className="bg-img" loading='lazy' width={1400} height={100} src="/img/gallery-2.JPG" alt="Store BG Image" />
+          <img class="bg-img" src="/img/gallery-2.JPG" alt="Painter painting" />
         </section>
         <ProductCategories />
         <WhyUs />
-        <ProductSlider headerClass="text-start" containerName="All Products" products={allProducts} />
-        <AboutUs img="/img/store-indoor.jpg" />
+        <ProductSlider headerClass="text-start" containerName="All Products" products={products} />
+        <AboutUs img="/img/prashanna.jpg" />
         <ProductSlider headerClass="text-start" containerName="Snacks" products={snacks} />
         <ProductSlider headerClass="text-start" containerName="Spices" products={spices} />
         <Testimonials />
@@ -65,15 +63,3 @@ export default function Home() {
     </div>
   );
 }
-
-// export async function getStaticProps() {
-//   const data = await fetcher('/api/staticdata');
-//   const products = JSON.parse(data);
-
-//   return {
-//     props: {
-//       products,
-//     },
-//     revalidate: 60,
-//   };
-// }

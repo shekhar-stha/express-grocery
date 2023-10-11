@@ -1,9 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
-
-import Navbar from '../../components/header/Navbar';
+import Navbar from '../../components/header/navbar';
+import Footer from '../../components/info/footer';
 import ContactForm from '../../components/form/contactForm';
-import Footer from '../../components/info/Footer';
 
 export default function Contact() {
   return (

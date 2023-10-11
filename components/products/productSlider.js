@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
-import Product from "./ProductCard";
+import Product from "./productCard";
 // Slick
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IconChevronRight } from '@tabler/icons-react';
+import { IconChevronLeft } from '@tabler/icons-react';
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ProductSlider(props) {

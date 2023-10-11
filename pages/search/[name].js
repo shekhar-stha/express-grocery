@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import Navbar from "../../components/header/Navbar";
-import ProductCard from "../../components/products/ProductCard";
+import Navbar from "../../components/header/navbar";
+import ProductCard from "../../components/products/productCard";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import Link from "next/link";
-import Footer from "../../components/info/Footer";
-import SearchComponent from "../../components/ui-elements/SearchButton";
+import Footer from "../../components/info/footer";
+import SearchComponent from "../../components/ui-elements/searchButton";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Search() {
@@ -27,8 +27,8 @@ export default function Search() {
     if (!data) {
         return (
             <section style={{ width: "100vw", height: "100vh" }} className='d-flex justify-content-center align-items-center'>
-                <div className="spinner-grow" role="status">
-                    <span className="sr-only">Loading...</span>
+                <div class="spinner-grow" role="status">
+                    <span class="sr-only">Loading...</span>
                 </div>
             </section>
         );
@@ -55,7 +55,7 @@ export default function Search() {
     return (
         <>
             <Head>
-                <title>Express Grocery | Indian Nepali Grocery Store</title>
+                <title>Seearch Products | Indian Nepali Grocery Store</title>
                 <meta name="description" content="Explore a diverse range of Indian and Nepali groceries at Express Grocery Store in Charlottesville. Enjoy free delivery over $40" />
                 <meta name="keywords" content="Indian groceries, Nepali groceries, Express Grocery Store, 
                         Best Indian Grocery, Grocery Store Charlottesville" />
